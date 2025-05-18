@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_online_retail
+    description: "Staging model for online retail data"
+    columns:
+      - name: invoice_no
+        description: "Unique invoice number"
+      - name: stock_code
+        description: "Item code"
+      - name: description
+        description: "Item description"
+      - name: quantity
+        description: "Quantity of items purchased"
+      - name: invoice_date
+        description: "Date of invoice"
+      - name: unit_price
+        description: "Price per unit"
+      - name: customer_id
+        description: "Customer identifier"
+      - name: country
+        description: "Country of transaction"

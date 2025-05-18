@@ -1,0 +1,14 @@
+my_dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: kmjpruo-pg86084
+      user: sushmaevs
+      password: Snowflake@2025
+      role: ACCOUNTADMIN
+      database: ecommerceAnalytics
+      warehouse: COMPUTE_WH
+      schema: RAW
+      threads: 1
+      client_session_keep_alive: False

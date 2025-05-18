@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Unique customers from the online retail dataset"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_products
+    description: "Product dimension"
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_date
+    description: "Date dimension"
+    columns:
+      - name: date
+        tests:
+          - not_null
+          - unique
+
+  - name: fact_orders
+    description: "Fact table with order-level metrics"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
