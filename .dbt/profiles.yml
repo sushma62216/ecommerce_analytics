@@ -3,9 +3,9 @@ my_dbt_project:
   outputs:
     dev:
       type: snowflake
-      account: kmjpruo-pg86084
-      user: sushmaevs
-      password: Snowflake@2025
+      account: accountid
+      user: username
+      password: password
       role: ACCOUNTADMIN
       database: ecommerceAnalytics
       warehouse: COMPUTE_WH
